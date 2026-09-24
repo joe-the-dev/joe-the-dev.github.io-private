@@ -3,7 +3,7 @@ name: Build & Deploy
 on:
   push:
     branches:
-      - develop
+      - main
 
 jobs:
   build-and-deploy:
@@ -48,7 +48,7 @@ jobs:
           deploy_key: ${{ secrets.DEPLOY_KEY }}
           publish_dir: ./build
           publish_branch: gh-pages
-          external_repository: vuthanhdatdev/vuthanhdatdev.github.io
+          external_repository: joe-the-dev/joe-the-dev.github.io
           user_name: 'Joe The Dev - GHA'
           user_email: 'vuthanhdat.dev+ci@gmail.com'
           commit_message: 'Deployed by GitHub Actions [run #${{ github.run_number }}]'
