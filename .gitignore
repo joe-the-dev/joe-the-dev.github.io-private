@@ -17,6 +17,7 @@
 .env.local
 .envrc
 graphify-out/
+.claude
 .env.development
 .env.development.local
 .env.test.local
