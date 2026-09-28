@@ -5,7 +5,7 @@ import { Certification } from '../data/portfolio.data'
 
 export interface AwardComponentProps {
   certifications?: Certification[]
-  sectionRef: RefObject<HTMLElement>
+  sectionRef: RefObject<HTMLElement | null>
 }
 
 export const AwardComponent: FC<AwardComponentProps> = ({ certifications, sectionRef }) => {

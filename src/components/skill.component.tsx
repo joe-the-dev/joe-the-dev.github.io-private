@@ -77,7 +77,7 @@ const DEFAULT_WORKFLOWS: Workflow[] = [
 export interface SkillComponentProps {
   skills?: Skill[] | undefined
   workflows?: Workflow[] | undefined
-  sectionRef: RefObject<HTMLElement>
+  sectionRef: RefObject<HTMLElement | null>
 }
 
 export const SkillComponent: FC<SkillComponentProps> = ({ sectionRef, skills, workflows }) => {

@@ -1,4 +1,4 @@
-import { Fragment, useRef } from 'react'
+import { Fragment, RefObject, useRef } from 'react'
 import './App.css'
 import PortfolioPage from './pages/portfolio.page'
 import { Scrollspy } from '@makotot/ghostui'
@@ -37,7 +37,7 @@ const App = () => {
   }
 
   return (
-    <Scrollspy sectionRefs={sectionRefs}>
+    <Scrollspy sectionRefs={sectionRefs as RefObject<Element>[]}>
       {({ currentElementIndexInViewport }) => (
         <PortfolioPage
           currentElementIndexInViewport={currentElementIndexInViewport}

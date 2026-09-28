@@ -11,7 +11,7 @@ import { PortfolioData } from '../data/portfolio.data'
 
 export interface PortfolioPageProps {
   currentElementIndexInViewport: number
-  sectionRefs: RefObject<HTMLElement>[]
+  sectionRefs: RefObject<HTMLElement | null>[]
   data: PortfolioData
 }
 

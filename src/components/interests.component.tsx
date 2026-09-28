@@ -62,7 +62,7 @@ const DEFAULT_INTERESTS: Interest[] = [
 export interface InterestsComponentProps {
   shortBriefLife?: string[] | undefined
   interests?: Interest[] | undefined
-  sectionRef: RefObject<HTMLElement>
+  sectionRef: RefObject<HTMLElement | null>
 }
 
 export const InterestsComponent: FC<InterestsComponentProps> = ({

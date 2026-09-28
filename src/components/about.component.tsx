@@ -4,7 +4,7 @@ import { faFacebook, faGithub, faLinkedin, faTwitter } from '@fortawesome/free-b
 import { faDownload, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 export interface AboutComponentProps {
-  sectionRef: RefObject<HTMLElement>
+  sectionRef: RefObject<HTMLElement | null>
   firstName: string
   lastName: string
   email: string

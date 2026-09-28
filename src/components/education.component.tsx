@@ -5,7 +5,7 @@ import { Education } from '../data/portfolio.data'
 
 export interface EducationComponentProps {
   educations: Education[]
-  sectionRef: RefObject<HTMLElement>
+  sectionRef: RefObject<HTMLElement | null>
 }
 
 export const EducationComponent: FC<EducationComponentProps> = ({ educations, sectionRef }) => {
