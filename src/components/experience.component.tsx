@@ -5,7 +5,7 @@ import { WorkHistory } from '../data/portfolio.data'
 
 export interface ExperienceComponentProps {
   data: WorkHistory[]
-  sectionRef: RefObject<HTMLElement>
+  sectionRef: RefObject<HTMLElement | null>
 }
 
 export const ExperienceRowComponent: FC<WorkHistory & { isLast: boolean }> = ({

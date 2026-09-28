@@ -1,6 +1,6 @@
 import { createRoute } from '@tanstack/react-router'
 import { Route as rootRoute } from './__root'
-import { Fragment, useRef } from 'react'
+import { Fragment, RefObject, useRef } from 'react'
 import { Scrollspy } from '@makotot/ghostui'
 import { usePortfolioData } from '../hooks/usePortfolioData'
 import PortfolioPage from '../pages/portfolio.page'
@@ -44,7 +44,7 @@ function PortfolioRoute() {
   }
 
   return (
-    <Scrollspy sectionRefs={sectionRefs}>
+    <Scrollspy sectionRefs={sectionRefs as RefObject<Element>[]}>
       {({ currentElementIndexInViewport }) => (
         <PortfolioPage
           currentElementIndexInViewport={currentElementIndexInViewport}
